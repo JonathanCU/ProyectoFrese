@@ -1,0 +1,1 @@
+/home/jonathan/ProyectoFrese/app/views/Clients/show.blade.php

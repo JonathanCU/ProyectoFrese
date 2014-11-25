@@ -1,0 +1,1 @@
+/home/jonathan/ProyectoFrese/app/views/Sellers/index.blade.php
