@@ -7,14 +7,18 @@ class SalesTableSeeder extends Seeder {
 
 	public function run()
 	{
-		$faker = Faker::create();
-
-		foreach(range(1, 10) as $index)
-		{
-			Sale::create([
-
-			]);
-		}
+	$sales = array(
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime],
+		['cantidad_kg'=>120, 'precio_producto'=>6000, 'created_at' => new DateTime, 'updated_at' => new DateTime]);
+		DB::table('sales')->insert($sales);	
 	}
 
 }
