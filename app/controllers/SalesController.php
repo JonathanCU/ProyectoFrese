@@ -10,7 +10,8 @@ class SalesController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		$Sales = Sales::all();
+		$this->layout->content = View::make('Sales.index', compact('Sales'));
 	}
 
 	/**

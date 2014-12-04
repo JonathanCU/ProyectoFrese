@@ -21,7 +21,7 @@ class ClientsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		$this->layout->content = View::make('Clients.create');
 	}
 
 	/**
@@ -32,7 +32,9 @@ class ClientsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input=Input::all();
+		Client::create($input);
+		return Redirect::route('Clients.index');
 	}
 
 	/**
