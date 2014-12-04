@@ -10,7 +10,8 @@ class ProductionsController extends \BaseController {
 	 */
 	public function index()
 	{
-		//
+		$Productions = Production::all();
+		$this->layout->content = View::make('Productions.index', compact('Productions'));
 	}
 
 	/**
@@ -44,7 +45,7 @@ class ProductionsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$this->layout->content=View::make('Productions.show', compact('Productions'));
 	}
 
 	/**

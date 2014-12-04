@@ -32,6 +32,7 @@ class CreateSellersTable extends Migration {
 			$table->String('direccion', 150);
 			$table->String('telefono', 12);
 			$table->String('email', 100);
+			$table->rememberToken();
 			$table->timestamps();
 		});
 
